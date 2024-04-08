@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+#wrap {
+    width: 100%;
+}
+
+/* header */
+header {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    background-color: #468189;
+}
+.logo {
+    margin-left: 0px;
+    width: 200px;
+    height: 100px;
+    background-color: #468189;
+}
+.logo img {
+    margin-top: 30px;
+}
+.menu {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 600px;
+    height: 40px;
+}
+.main-menu {
+    display: flex;
+}
+.main-menu li {
+    background-color: #77aca2;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #111;
+}
+.main-menu a {
+    color : #111;
+}
+.sub-menu {
+    display: none;
+}
+.sub-menu li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.8em;
+    background-color: #99c8c4;
+    color : #222;
+}
+
+/* slide */
+#slide {
+    width: 1200px;
+    height: 300px;
+    background-color: #777;
+}
+.slide-box {
+    display: none;
+    width: 1200px;
+    height: 300px;
+    position: relative;
+}
+.slide-box li {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide-box img {
+    width: 1200px;
+    height: 300px;
+}
+
+/* contents */
+#contents {
+    display: flex;
+    width: 1200px;
+    height: 200px;
+    background-color: #666;
+}
+.con1 {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+}
+.notice {
+    display: none;
+    width: 380px;
+    height: 180px;
+    padding: 10px;
+}
+.notice-title {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #468189;
+}
+.notice-con {
+    width: 380px;
+    margin-top: 10px;
+}
+.notice-con li {
+    position: relative;
+    width: 380px;
+    height: 35px;
+}
+.article {
+    position: absolute;
+    left: 10px;
+}
+.date {
+    position: absolute;
+    right: 10px;
+}
+.con2 {
+    width: 400px;
+    height: 200px;
+    background-color: #444;
+}
+.con3 {
+    width: 400px;
+    height: 200px;
+    background-color: #555;
+}
+
+/* footer */
+footer {
+    display: flex;
+    width: 1200px;
+    height: 100px;
+    background-color: #333;
+}
+.bt-logo {
+    width: 200px;
+    height: 100px;
+    background-color: #222;
+}
+.copy {
+    width: 800px;
+    height: 100px;
+    background-color: #111;
+}
+.sns {
+    width: 200px;
+    height: 100px;
+    background-color: #222;
+}
+
