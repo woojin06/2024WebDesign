@@ -95,18 +95,20 @@ header {
     height: 200px;
     background-color: #666;
 }
+.hide {
+    display: none;
+}
 .con1 {
     width: 400px;
     height: 200px;
     background-color: #fff;
 }
-.notice {
-    display: none;
+.con-box {
     width: 380px;
     height: 180px;
-    padding: 10px;
+    padding : 10px;
 }
-.notice-title {
+.tab-title {
     width: 100px;
     height: 30px;
     margin-left: 10px;
@@ -114,11 +116,11 @@ header {
     line-height: 30px;
     background-color: #468189;
 }
-.notice-con {
+.tab-con {
     width: 380px;
     margin-top: 10px;
 }
-.notice-con li {
+.tab-con li {
     position: relative;
     width: 380px;
     height: 35px;
@@ -131,11 +133,47 @@ header {
     position: absolute;
     right: 10px;
 }
+
+.gallery ul {
+    display: flex;
+}
+.gallery a {
+    width: 120px;
+    height: 120px;
+}
+.gallery img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+}
+.gallery li {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.gallery h2 {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
 .con2 {
     width: 400px;
     height: 200px;
-    background-color: #444;
 }
+.con2 img {
+    width: 340px;
+    height: 120px;
+}
+
+
 .con3 {
     width: 400px;
     height: 200px;
