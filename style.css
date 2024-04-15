@@ -93,7 +93,6 @@ header {
     display: flex;
     width: 1200px;
     height: 200px;
-    background-color: #666;
 }
 .hide {
     display: none;
@@ -108,13 +107,18 @@ header {
     height: 180px;
     padding : 10px;
 }
-.tab-title {
+.tab-title, .tab-title2 {
     width: 100px;
     height: 30px;
     margin-left: 10px;
     text-align: center;
     line-height: 30px;
     background-color: #468189;
+}
+.tab-title2 {
+    position: absolute;
+    top: 410px;
+    left: 100px;
 }
 .tab-con {
     width: 380px;
@@ -172,12 +176,42 @@ header {
     width: 340px;
     height: 120px;
 }
+.con2 .tab-con a{
+    position: relative;
+    display: block;
+    width: 340px;
+    height: 120px;
 
-
+}
+.tab-con h2, h4 {
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tab-con h4 {
+    transform: translate(-50%, 50%)
+}
 .con3 {
     width: 400px;
     height: 200px;
-    background-color: #555;
+}
+.con3 img {
+    width: 340px;
+    height: 120px;
+}
+.con3 .tab-con a{
+    position: relative;
+    display: block;
+    width: 340px;
+    height: 120px;
+
 }
 
 /* footer */
@@ -185,21 +219,29 @@ footer {
     display: flex;
     width: 1200px;
     height: 100px;
-    background-color: #333;
+    background-color: #111;
 }
 .bt-logo {
     width: 200px;
     height: 100px;
-    background-color: #222;
 }
+.bt-logo img {
+    filter: grayscale(100%);
+    margin-top: 30px;
+}
+
 .copy {
     width: 800px;
     height: 100px;
-    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    line-height: 100px;
 }
 .sns {
     width: 200px;
     height: 100px;
-    background-color: #222;
 }
-
+#sns {
+    margin-top: 60px;
+    margin-left: 100px;
+}
