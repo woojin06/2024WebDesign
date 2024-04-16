@@ -11,6 +11,7 @@ li{
 
 a {
     text-decoration: none;
+    display: block;
 }
 #wrap {
     width: 100%;
@@ -34,6 +35,7 @@ header {
 }
 .menu {
     position: absolute;
+    z-index: 10;
     right: 30px;
     top: 30px;
     width: 600px;
@@ -49,6 +51,9 @@ header {
     line-height: 40px;
     text-align: center;
     color: #111;
+}
+.main-menu li:hover {
+    background-color: #bbefe6;
 }
 .main-menu a {
     color : #111;
@@ -68,24 +73,57 @@ header {
 #slide {
     width: 1200px;
     height: 300px;
-    background-color: #777;
+    overflow: hidden;
 }
 .slide-box {
-    display: none;
     width: 1200px;
-    height: 300px;
+    height: 900px;
     position: relative;
+    animation: slide-ani 9s infinite;
+}
+@keyframes slide-ani {
+    0% {
+        top: 0;
+    }
+    22% {
+        top: 0;
+    }
+    33% {
+        top: -300px;
+    }
+    55%{
+        top: -300px;
+    }
+    66%{
+        top: -600px;
+    }
+    88%{
+        top: -600px
+    }
+    100%{
+        top: -900px;
+    }
 }
 .slide-box li {
     width: 1200px;
     height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
 }
 .slide-box img {
     width: 1200px;
     height: 300px;
+}
+.slide-box h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%, -50%);
+    color: #ddd;
 }
 
 /* contents */
@@ -107,7 +145,7 @@ header {
     height: 180px;
     padding : 10px;
 }
-.tab-title, .tab-title2 {
+.tab-title {
     width: 100px;
     height: 30px;
     margin-left: 10px;
@@ -115,11 +153,24 @@ header {
     line-height: 30px;
     background-color: #468189;
 }
-.tab-title2 {
-    position: absolute;
-    top: 410px;
-    left: 100px;
+.tab-title2 ul {
+    display: flex;
 }
+.tab-title2 a {
+    display: block;
+    width: 100px;
+    height: 30px;
+}
+.tab-title2 li {
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    background-color: #468189;
+}
+.tab-title2 ul li:nth-child(2) {
+    background-color: #88a3ab;
+}
+
 .tab-con {
     width: 380px;
     margin-top: 10px;
