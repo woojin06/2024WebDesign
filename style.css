@@ -91,16 +91,16 @@ header {
     33% {
         top: -300px;
     }
-    55%{
+    55% {
         top: -300px;
     }
-    66%{
+    66% {
         top: -600px;
     }
-    88%{
-        top: -600px
+    88% {
+        top: -600px;
     }
-    100%{
+    100% {
         top: -900px;
     }
 }
@@ -295,4 +295,31 @@ footer {
 #sns {
     margin-top: 60px;
     margin-left: 100px;
+}
+.layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+.layer h2 {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #468189;
+}
+.layer p {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+}
+.close-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: #468189;
 }
